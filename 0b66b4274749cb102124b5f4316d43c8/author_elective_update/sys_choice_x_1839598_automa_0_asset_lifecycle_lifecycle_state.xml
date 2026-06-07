@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="lifecycle_state" table="x_1839598_automa_0_asset_lifecycle" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>lifecycle_state</element>
+            <name>x_1839598_automa_0_asset_lifecycle</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-06 05:22:42</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>lifecycle_state</sys_name>
+            <sys_package display_value="Automated Asset Lifecycle Engine" source="x_1839598_automa_0">0b66b4274749cb102124b5f4316d43c8</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Automated Asset Lifecycle Engine">0b66b4274749cb102124b5f4316d43c8</sys_scope>
+            <sys_update_name>sys_choice_x_1839598_automa_0_asset_lifecycle_lifecycle_state</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-06 05:22:42</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>lifecycle_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>In Stock</label>
+            <language>en</language>
+            <name>x_1839598_automa_0_asset_lifecycle</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-06 05:24:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-06 05:24:37</sys_updated_on>
+            <value>in_stock</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>lifecycle_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>In use</label>
+            <language>en</language>
+            <name>x_1839598_automa_0_asset_lifecycle</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-06 05:22:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-06 05:24:37</sys_updated_on>
+            <value>in_use</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>lifecycle_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Retired</label>
+            <language>en</language>
+            <name>x_1839598_automa_0_asset_lifecycle</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-06 05:22:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-06 05:24:37</sys_updated_on>
+            <value>retired</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

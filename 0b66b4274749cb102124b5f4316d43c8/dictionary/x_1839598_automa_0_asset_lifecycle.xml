@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="9eef94bd47918f502124b5f4316d434c" label="Asset Lifecycle" max_length="40" name="x_1839598_automa_0_asset_lifecycle" type="collection">
+        <element label="Assigned To" max_length="32" name="assigned_to" reference="sys_user" type="reference"/>
+        <element choice="3" label="Lifecycle State" max_length="40" name="lifecycle_state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="In use" sequence="1" value="in_use"/>
+                <element inactive_on_update="false" label="Retired" sequence="2" value="retired"/>
+                <element inactive_on_update="false" label="In Stock" sequence="0" value="in_stock"/>
+            </choice>
+        </element>
+        <element label="Serial Number" max_length="100" name="serial_number" type="string"/>
+        <element label="Last Verified" max_length="40" name="last_verified" type="glide_date_time"/>
+        <index name="index">
+            <element name="assigned_to"/>
+        </index>
+    </element>
+</database>

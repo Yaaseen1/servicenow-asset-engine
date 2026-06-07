@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="732e94b947918f502124b5f4316d435b" label="Hardware Stage" max_length="40" name="x_1839598_automa_0_hardware_stage" type="collection">
+        <element label="Raw Model" max_length="100" name="raw_model" type="string"/>
+        <element label="Serial Number" max_length="100" name="serial_number" type="string"/>
+        <element label="Discovery Source" max_length="100" name="discovery_source" type="string"/>
+        <element label="Raw Status" max_length="100" name="raw_status" type="string"/>
+    </element>
+</database>
