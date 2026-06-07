@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="m2m_app_config_theme">
+    <m2m_app_config_theme action="INSERT_OR_UPDATE">
+        <applicability/>
+        <order>0</order>
+        <sys_class_name>m2m_app_config_theme</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-07 06:11:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2855b5025add0390d1c7792346c618ec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Automated Asset Lifecycle Engine" source="x_1839598_automa_0">0b66b4274749cb102124b5f4316d43c8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Automated Asset Lifecycle Engine">0b66b4274749cb102124b5f4316d43c8</sys_scope>
+        <sys_update_name>m2m_app_config_theme_2855b5025add0390d1c7792346c618ec</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-07 06:11:14</sys_updated_on>
+        <theme display_value="Base Agent Workspace theme">c012213bc39b10101d590cf06e40dd32</theme>
+        <ux_app_configuration display_value="Asset Lifecycle Workspace App Config">2c55b50288dd03906dd708c0ef7a6bed</ux_app_configuration>
+    </m2m_app_config_theme>
+</record_update>

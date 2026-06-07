@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_list_category">
+    <sys_ux_list_category action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <configuration display_value="Asset Lifecycle Workspace_menu_config">3d55790247dd03902124b5f4316d431f</configuration>
+        <description/>
+        <order>100</order>
+        <sys_class_name>sys_ux_list_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-07 06:11:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3555790247dd03902124b5f4316d4324</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Asset Lifecycle</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Automated Asset Lifecycle Engine" source="x_1839598_automa_0">0b66b4274749cb102124b5f4316d43c8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Automated Asset Lifecycle Engine">0b66b4274749cb102124b5f4316d43c8</sys_scope>
+        <sys_update_name>sys_ux_list_category_3555790247dd03902124b5f4316d4324</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-07 06:11:17</sys_updated_on>
+        <title>Asset Lifecycle</title>
+    </sys_ux_list_category>
+</record_update>
