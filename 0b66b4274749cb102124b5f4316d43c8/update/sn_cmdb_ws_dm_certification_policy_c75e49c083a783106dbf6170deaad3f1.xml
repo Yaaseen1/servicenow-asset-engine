@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_cmdb_ws_dm_certification_policy">
+    <sn_cmdb_ws_dm_certification_policy action="INSERT_OR_UPDATE">
+        <allow_empty_fields>true</allow_empty_fields>
+        <allow_field_updates>true</allow_field_updates>
+        <archive_for_days/>
+        <assignee/>
+        <certification_fields/>
+        <cmdb_policy_type display_value="Certification">fe2a16b3436031106d8a8ef0dab8f2ff</cmdb_policy_type>
+        <description/>
+        <display_fields/>
+        <encoded_query table="cmdb_ci">ref_cmdb_ci_win_server.nameISNOTEMPTY<item endquery="false" field="ref_cmdb_ci_win_server.name" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+        </encoded_query>
+        <instructions/>
+        <name>test</name>
+        <needs_review>true</needs_review>
+        <policy_execution_job/>
+        <subflow/>
+        <sys_class_name>sn_cmdb_ws_dm_certification_policy</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-20 18:34:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>c75e49c083a783106dbf6170deaad3f1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>test</sys_name>
+        <sys_package display_value="Automated Asset Lifecycle Engine" source="x_1839598_automa_0">0b66b4274749cb102124b5f4316d43c8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Automated Asset Lifecycle Engine">0b66b4274749cb102124b5f4316d43c8</sys_scope>
+        <sys_update_name>sn_cmdb_ws_dm_certification_policy_c75e49c083a783106dbf6170deaad3f1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-20 18:38:10</sys_updated_on>
+        <table>cmdb_ci</table>
+        <task_assignment_type>user_group_field</task_assignment_type>
+        <task_due_in_days/>
+        <task_management_field_path/>
+        <task_management_group/>
+        <task_management_user/>
+        <user/>
+        <user_group/>
+        <work_notes/>
+    </sn_cmdb_ws_dm_certification_policy>
+</record_update>

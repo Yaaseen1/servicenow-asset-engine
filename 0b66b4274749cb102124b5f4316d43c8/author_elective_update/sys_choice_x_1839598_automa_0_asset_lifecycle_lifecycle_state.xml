@@ -72,5 +72,43 @@
             <sys_updated_on>2026-06-06 05:24:37</sys_updated_on>
             <value>retired</value>
         </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>lifecycle_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pending Refresh</label>
+            <language>en</language>
+            <name>x_1839598_automa_0_asset_lifecycle</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-29 06:52:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-29 06:52:31</sys_updated_on>
+            <value>pending_refresh</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>lifecycle_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pending Review</label>
+            <language>en</language>
+            <name>x_1839598_automa_0_asset_lifecycle</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-29 06:52:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-29 06:52:31</sys_updated_on>
+            <value>pending_review</value>
+        </sys_choice>
     </sys_choice>
 </record_update>

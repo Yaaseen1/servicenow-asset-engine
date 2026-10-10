@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="2489b28883c743106dbf6170deaad317" extends="sys_import_set_row" label="u_hw_stage_import_temp" max_length="40" name="x_1839598_automa_0_u_hw_stage_import_temp" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=event_type" label="event_type" max_length="40" name="u_event_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=warranty_expiration" label="warranty_expiration" max_length="40" name="u_warranty_expiration" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=lease_expiration" label="lease_expiration" max_length="40" name="u_lease_expiration" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=detected_software_json" label="detected_software_json" max_length="67" name="u_detected_software_json" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=ci_class" label="ci_class" max_length="40" name="u_ci_class" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=hostname" label="hostname" max_length="40" name="u_hostname" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=scan_timestamp" label="scan_timestamp" max_length="40" name="u_scan_timestamp" type="string"/>
+    </element>
+</database>

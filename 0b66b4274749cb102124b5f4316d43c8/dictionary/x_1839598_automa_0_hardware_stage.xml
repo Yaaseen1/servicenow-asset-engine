@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="732e94b947918f502124b5f4316d435b" label="Hardware Stage" max_length="40" name="x_1839598_automa_0_hardware_stage" type="collection">
-        <element label="Raw Model" max_length="100" name="raw_model" type="string"/>
         <element label="Serial Number" max_length="100" name="serial_number" type="string"/>
-        <element label="Discovery Source" max_length="100" name="discovery_source" type="string"/>
+        <element label="Scan Timestamp" max_length="40" name="scan_timestamp" type="glide_date_time"/>
+        <element choice="3" label="Event Type" max_length="40" name="event_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Software Detected" sequence="0" value="software_detected"/>
+                <element inactive_on_update="false" label="Hardware Status" sequence="1" value="hardware_status"/>
+            </choice>
+        </element>
+        <element label="Raw Model" max_length="100" name="raw_model" type="string"/>
+        <element label="Lease Expiration" max_length="40" name="lease_expiration" type="glide_date"/>
+        <element label="Detected Software JSON" max_length="4000" name="detected_software_json" type="string"/>
+        <element label="Warranty Expiration" max_length="40" name="warranty_expiration" type="glide_date"/>
         <element label="Raw Status" max_length="100" name="raw_status" type="string"/>
+        <element label="Discovery Source" max_length="100" name="discovery_source" type="string"/>
+        <element label="CI Class" max_length="60" name="ci_class" type="string"/>
+        <element label="Hostname" max_length="100" name="hostname" type="string"/>
     </element>
 </database>

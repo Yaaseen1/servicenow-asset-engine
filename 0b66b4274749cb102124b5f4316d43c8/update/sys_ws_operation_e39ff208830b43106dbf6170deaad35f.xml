@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes/>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl/>
+        <http_method>POST</http_method>
+        <name>Ingest Event</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    var body = request.body.data;
+
+    // Basic validation
+    if (!body || !body.hostname || !body.event_type) {
+        response.setStatus(400);
+        response.setBody({
+            error: "Missing required fields: hostname and event_type are required."
+        });
+        return;
+    }
+
+    var validEventTypes = ['software_detected', 'hardware_status'];
+    if (validEventTypes.indexOf(body.event_type) === -1) {
+        response.setStatus(400);
+        response.setBody({
+            error: "Invalid event_type. Must be 'software_detected' or 'hardware_status'."
+        });
+        return;
+    }
+
+    try {
+        var stage = new GlideRecord('x_1839598_automa_0_hardware_stage');
+        stage.initialize();
+
+        stage.setValue('hostname', body.hostname);
+        stage.setValue('event_type', body.event_type);
+        stage.setValue('ci_class', body.ci_class || '');
+        stage.setValue('discovery_source', body.source || 'AALE_Simulated_Discovery');
+
+        if (body.warranty_expiration) {
+            stage.setValue('warranty_expiration', body.warranty_expiration);
+        }
+        if (body.lease_expiration) {
+            stage.setValue('lease_expiration', body.lease_expiration);
+        }
+        if (body.detected_software) {
+            stage.setValue('detected_software_json', JSON.stringify(body.detected_software));
+        }
+        if (body.scan_timestamp) {
+            stage.setValue('scan_timestamp', body.scan_timestamp);
+        }
+
+        var sysId = stage.insert();
+
+        if (!sysId) {
+            response.setStatus(500);
+            response.setBody({ error: "Failed to create Hardware Stage record." });
+            return;
+        }
+
+        response.setStatus(201);
+        response.setBody({
+            status: "success",
+            sys_id: sysId,
+            message: "Hardware Stage record created."
+        });
+
+    } catch (e) {
+        response.setStatus(500);
+        response.setBody({ error: "Unexpected error: " + e.message });
+    }
+
+})(request, response);]]></operation_script>
+        <operation_uri/>
+        <produces/>
+        <produces_customized>false</produces_customized>
+        <relative_path>/events</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 06:22:05</sys_created_on>
+        <sys_id>e39ff208830b43106dbf6170deaad35f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Ingest Event</sys_name>
+        <sys_package display_value="Automated Asset Lifecycle Engine" source="x_1839598_automa_0">0b66b4274749cb102124b5f4316d43c8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Automated Asset Lifecycle Engine">0b66b4274749cb102124b5f4316d43c8</sys_scope>
+        <sys_update_name>sys_ws_operation_e39ff208830b43106dbf6170deaad35f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 06:22:05</sys_updated_on>
+        <web_service_definition/>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>
