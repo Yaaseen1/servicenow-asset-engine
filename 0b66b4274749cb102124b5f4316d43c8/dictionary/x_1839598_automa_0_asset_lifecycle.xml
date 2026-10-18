@@ -10,8 +10,12 @@
             </choice>
         </element>
         <element label="Serial Number" max_length="100" name="serial_number" type="string"/>
+        <element label="Hostname" max_length="100" name="hostname" type="string"/>
+        <element label="Lease Expiration" max_length="40" name="lease_expiration" type="glide_date"/>
         <element label="Assigned To" max_length="32" name="assigned_to" reference="sys_user" type="reference"/>
+        <element label="Warranty Expiration" max_length="40" name="warranty_expiration" type="glide_date"/>
         <element label="Last Verified" max_length="40" name="last_verified" type="glide_date_time"/>
+        <element label="CI Class" max_length="60" name="ci_class" type="string"/>
         <index name="index">
             <element name="assigned_to"/>
         </index>
