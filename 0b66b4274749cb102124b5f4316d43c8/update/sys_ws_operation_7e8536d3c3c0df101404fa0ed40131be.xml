@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl/>
+        <http_method>POST</http_method>
+        <name>Ingest Event</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+    var body = request.body.data;
+    var errors = [];
+
+    if (!body || !body.hostname) {
+        errors.push('hostname is required');
+    }
+    if (!body || ['hardware_status', 'software_detected'].indexOf(body.event_type) === -1) {
+        errors.push('event_type must be hardware_status or software_detected');
+    }
+    if (errors.length) {
+        response.setStatus(400);
+        response.setBody({ status: 'error', errors: errors });
+        return;
+    }
+
+    var gr = new GlideRecord('x_1839598_automa_0_hardware_stage');
+    gr.initialize();
+
+    var fields = ['hostname', 'event_type', 'ci_class', 'serial_number',
+                  'warranty_expiration', 'lease_expiration', 'detected_software_json',
+                  'scan_timestamp', 'discovery_source', 'raw_model', 'raw_status'];
+
+    fields.forEach(function (f) {
+        var v = body[f];
+        if (v !== undefined && v !== null && v !== '') {
+            if (typeof v === 'object') {
+                v = JSON.stringify(v);
+            }
+            gr.setValue(f, v);
+        }
+    });
+
+    var id = gr.insert();
+    if (!id) {
+        response.setStatus(500);
+        response.setBody({ status: 'error', message: 'Insert failed' });
+        return;
+    }
+
+    response.setStatus(201);
+    response.setBody({ status: 'accepted', sys_id: id, hostname: body.hostname });
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_1839598_automa_0/aale_inbound_events/events</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/events</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-26 00:58:47</sys_created_on>
+        <sys_id>7e8536d3c3c0df101404fa0ed40131be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Ingest Event</sys_name>
+        <sys_package display_value="Automated Asset Lifecycle Engine" source="x_1839598_automa_0">0b66b4274749cb102124b5f4316d43c8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Automated Asset Lifecycle Engine">0b66b4274749cb102124b5f4316d43c8</sys_scope>
+        <sys_update_name>sys_ws_operation_7e8536d3c3c0df101404fa0ed40131be</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-26 00:58:47</sys_updated_on>
+        <web_service_definition display_value="AALE Inbound Events">34de3684830b43106dbf6170deaad39d</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>
