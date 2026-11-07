@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="9eef94bd47918f502124b5f4316d434c" label="Asset Lifecycle" max_length="40" name="x_1839598_automa_0_asset_lifecycle" text_index="true" type="collection">
-        <element default="javascript:getNextObjNumberPadded();" label="Asset Lifecycle Number" max_length="40" name="asset_lifecycle_number" read_only="true" type="string"/>
+        <element default="javascript:global.getNextObjNumberPadded();" label="Asset Lifecycle Number" max_length="100" name="asset_lifecycle_number" read_only="true" type="string"/>
         <element label="Last Verified" max_length="40" name="last_verified" type="glide_date_time"/>
         <element label="Assigned To" max_length="32" name="assigned_to" reference="sys_user" type="reference"/>
         <element label="CI Class" max_length="60" name="ci_class" type="string"/>

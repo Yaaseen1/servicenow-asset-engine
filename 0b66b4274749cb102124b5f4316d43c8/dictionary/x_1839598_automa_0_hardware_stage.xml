@@ -10,12 +10,11 @@
         </element>
         <element label="Raw Model" max_length="100" name="raw_model" type="string"/>
         <element label="Raw Status" max_length="100" name="raw_status" type="string"/>
-        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element label="Serial Number" max_length="100" name="serial_number" type="string"/>
         <element label="Lease Expiration" max_length="40" name="lease_expiration" type="glide_date"/>
         <element label="Discovery Source" max_length="100" name="discovery_source" type="string"/>
         <element label="Scan Timestamp" max_length="40" name="scan_timestamp" type="glide_date_time"/>
-        <element default="javascript:getNextObjNumberPadded();" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="Hardware Number" max_length="40" name="hardware_number" read_only="true" type="string" use_dynamic_default="true"/>
+        <element default="javascript:global.getNextObjNumberPadded();" label="Hardware Number" max_length="100" name="hardware_number" read_only="true" type="string"/>
         <element label="Detected Software JSON" max_length="4000" name="detected_software_json" type="string"/>
         <element label="CI Class" max_length="60" name="ci_class" type="string"/>
     </element>
