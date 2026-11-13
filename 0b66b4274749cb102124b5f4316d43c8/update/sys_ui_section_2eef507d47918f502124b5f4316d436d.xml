@@ -4,167 +4,139 @@
             <element>asset_lifecycle_number</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-11-10 06:30:11</sys_created_on>
-            <sys_id>23a1d594c368d3101404fa0ed40131ff</sys_id>
+            <sys_created_on>2026-11-12 00:45:23</sys_created_on>
+            <sys_id>d4f5de34c3e41b101404fa0ed401316f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1839598_automa_0_asset_lifecycle" sys_domain="global" view="Default view">2eef507d47918f502124b5f4316d436d</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-11-10 06:30:11</sys_updated_on>
+            <sys_updated_on>2026-11-12 00:45:23</sys_updated_on>
             <sys_user/>
             <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.begin_split</element>
-            <position>1</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-11-10 06:30:11</sys_created_on>
-            <sys_id>eba1d594c368d3101404fa0ed40131ff</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_1839598_automa_0_asset_lifecycle" sys_domain="global" view="Default view">2eef507d47918f502124b5f4316d436d</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-11-10 06:30:11</sys_updated_on>
-            <sys_user/>
-            <type>.begin_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>assigned_to</element>
-            <position>2</position>
+            <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-11-10 06:30:11</sys_created_on>
-            <sys_id>a7a11994c368d3101404fa0ed4013100</sys_id>
+            <sys_created_on>2026-11-12 00:45:23</sys_created_on>
+            <sys_id>5cf5de34c3e41b101404fa0ed4013170</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1839598_automa_0_asset_lifecycle" sys_domain="global" view="Default view">2eef507d47918f502124b5f4316d436d</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-11-10 06:30:11</sys_updated_on>
+            <sys_updated_on>2026-11-12 00:45:23</sys_updated_on>
             <sys_user/>
             <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.split</element>
-            <position>3</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-11-10 06:30:11</sys_created_on>
-            <sys_id>63a11994c368d3101404fa0ed4013101</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_1839598_automa_0_asset_lifecycle" sys_domain="global" view="Default view">2eef507d47918f502124b5f4316d436d</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-11-10 06:30:11</sys_updated_on>
-            <sys_user/>
-            <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>lifecycle_state</element>
-            <position>4</position>
+            <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-11-10 06:30:11</sys_created_on>
-            <sys_id>2fa11994c368d3101404fa0ed4013101</sys_id>
+            <sys_created_on>2026-11-12 00:45:23</sys_created_on>
+            <sys_id>18f5de34c3e41b101404fa0ed4013171</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1839598_automa_0_asset_lifecycle" sys_domain="global" view="Default view">2eef507d47918f502124b5f4316d436d</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-11-10 06:30:11</sys_updated_on>
+            <sys_updated_on>2026-11-12 00:45:23</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.end_split</element>
-            <position>5</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-11-10 06:30:11</sys_created_on>
-            <sys_id>e7a11994c368d3101404fa0ed4013102</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_1839598_automa_0_asset_lifecycle" sys_domain="global" view="Default view">2eef507d47918f502124b5f4316d436d</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-11-10 06:30:11</sys_updated_on>
-            <sys_user/>
-            <type>.end_split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
             <element>serial_number</element>
-            <position>6</position>
+            <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-11-10 06:30:11</sys_created_on>
-            <sys_id>a3a11994c368d3101404fa0ed4013103</sys_id>
+            <sys_created_on>2026-11-12 00:45:23</sys_created_on>
+            <sys_id>d0f5de34c3e41b101404fa0ed4013172</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1839598_automa_0_asset_lifecycle" sys_domain="global" view="Default view">2eef507d47918f502124b5f4316d436d</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-11-10 06:30:11</sys_updated_on>
+            <sys_updated_on>2026-11-12 00:45:23</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>last_verified</element>
-            <position>7</position>
+            <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-11-10 06:30:11</sys_created_on>
-            <sys_id>6fa11994c368d3101404fa0ed4013103</sys_id>
+            <sys_created_on>2026-11-12 00:45:23</sys_created_on>
+            <sys_id>9cf5de34c3e41b101404fa0ed4013172</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1839598_automa_0_asset_lifecycle" sys_domain="global" view="Default view">2eef507d47918f502124b5f4316d436d</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-11-10 06:30:11</sys_updated_on>
+            <sys_updated_on>2026-11-12 00:45:23</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>hardware_refresh_request</element>
-            <position>8</position>
+            <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-11-10 06:30:11</sys_created_on>
-            <sys_id>2ba11994c368d3101404fa0ed4013104</sys_id>
+            <sys_created_on>2026-11-12 00:45:23</sys_created_on>
+            <sys_id>58f5de34c3e41b101404fa0ed4013173</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1839598_automa_0_asset_lifecycle" sys_domain="global" view="Default view">2eef507d47918f502124b5f4316d436d</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-11-10 06:30:11</sys_updated_on>
+            <sys_updated_on>2026-11-12 00:45:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>approval</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-11-12 00:45:23</sys_created_on>
+            <sys_id>14f5de34c3e41b101404fa0ed4013174</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1839598_automa_0_asset_lifecycle" sys_domain="global" view="Default view">2eef507d47918f502124b5f4316d436d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-11-12 00:45:23</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>hostname</element>
-            <position>9</position>
+            <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-11-10 06:30:11</sys_created_on>
-            <sys_id>e3a11994c368d3101404fa0ed4013105</sys_id>
+            <sys_created_on>2026-11-12 00:45:23</sys_created_on>
+            <sys_id>dcf5de34c3e41b101404fa0ed4013174</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1839598_automa_0_asset_lifecycle" sys_domain="global" view="Default view">2eef507d47918f502124b5f4316d436d</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-11-10 06:30:11</sys_updated_on>
+            <sys_updated_on>2026-11-12 00:45:23</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>lease_expiration</element>
-            <position>10</position>
+            <position>8</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-11-10 06:30:11</sys_created_on>
-            <sys_id>afa11994c368d3101404fa0ed4013105</sys_id>
+            <sys_created_on>2026-11-12 00:45:23</sys_created_on>
+            <sys_id>50f5de34c3e41b101404fa0ed4013182</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1839598_automa_0_asset_lifecycle" sys_domain="global" view="Default view">2eef507d47918f502124b5f4316d436d</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-11-10 06:30:11</sys_updated_on>
+            <sys_updated_on>2026-11-12 00:45:23</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>warranty_expiration</element>
-            <position>11</position>
+            <position>9</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-11-10 06:30:11</sys_created_on>
-            <sys_id>6ba11994c368d3101404fa0ed4013106</sys_id>
+            <sys_created_on>2026-11-12 00:45:23</sys_created_on>
+            <sys_id>1cf5de34c3e41b101404fa0ed4013182</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1839598_automa_0_asset_lifecycle" sys_domain="global" view="Default view">2eef507d47918f502124b5f4316d436d</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-11-10 06:30:11</sys_updated_on>
+            <sys_updated_on>2026-11-12 00:45:23</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

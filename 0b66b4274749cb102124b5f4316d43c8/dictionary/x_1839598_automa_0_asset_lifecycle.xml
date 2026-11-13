@@ -14,6 +14,7 @@
                 <element inactive_on_update="false" label="In use" sequence="1" value="in_use"/>
             </choice>
         </element>
+        <element label="Approval" max_length="40" name="approval" type="string"/>
         <element label="Serial Number" max_length="100" name="serial_number" type="string"/>
         <element label="Hostname" max_length="100" name="hostname" type="string"/>
         <element label="Lease Expiration" max_length="40" name="lease_expiration" type="glide_date"/>
